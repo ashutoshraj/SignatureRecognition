@@ -32,9 +32,9 @@ def main(args):
     for match in matches:
         score += match.distance
     if score / len(matches) < args.thres:
-        print("RESULT: Signature does match with score = {}".format(100-(score / len(matches))))
+        print("RESULT: Signature match with score = {}".format(100-(score / len(matches))))
     else:
-        print("RESULT: Signature match with score.")
+        print("RESULT: Signature does not match.")
     print('----|| MODULE ENDED ||----')
 
 
