@@ -31,11 +31,10 @@ def main(args):
     score = 0
     for match in matches:
         score += match.distance
-    score_threshold = args.thres
-    if score / len(matches) < score_threshold:
-        print("RESULT: Signature does not matched with score = {}".format(score / len(matches)))
+    if score / len(matches) < args.thres:
+        print("RESULT: Signature does match with score = {}".format(100-(score / len(matches))))
     else:
-        print("RESULT: Signature matched with score = {}".format(score / len(matches)))
+        print("RESULT: Signature match with score."
     print('----|| MODULE ENDED ||----')
 
 
