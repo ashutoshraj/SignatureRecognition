@@ -34,7 +34,7 @@ def main(args):
     if score / len(matches) < args.thres:
         print("RESULT: Signature does match with score = {}".format(100-(score / len(matches))))
     else:
-        print("RESULT: Signature match with score."
+        print("RESULT: Signature match with score.")
     print('----|| MODULE ENDED ||----')
 
 
